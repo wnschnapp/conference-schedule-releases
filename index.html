@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conference Schedule — Download</title>
+<style>
+  :root {
+    --grad-start: #8B5CFF;
+    --grad-mid: #5A6BFF;
+    --grad-end: #3D7BFF;
+    --bg: #0E0F13;
+    --card: #16171D;
+    --text: #F2F3F7;
+    --muted: #9A9BB0;
+    --line: #262832;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: radial-gradient(1200px 600px at 50% -10%, #1c1d29 0%, var(--bg) 60%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    min-height: 100%;
+  }
+  .card {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+  .glyph {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto 22px;
+    display: block;
+    filter: drop-shadow(0 10px 24px rgba(90, 107, 255, 0.35));
+  }
+  h1 {
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    letter-spacing: -0.2px;
+  }
+  h1 .dim { color: var(--muted); font-weight: 600; }
+  .sub {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 auto 28px;
+    max-width: 340px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 17px 20px;
+    border-radius: 14px;
+    border: 0;
+    background: linear-gradient(135deg, var(--grad-start), var(--grad-end));
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(90, 107, 255, 0.35);
+  }
+  .btn:active { transform: translateY(1px); }
+  .hint {
+    margin: 14px auto 0;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .steps {
+    text-align: left;
+    margin: 26px auto 0;
+    padding: 16px 18px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    max-width: 360px;
+  }
+  .steps h2 {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .steps ol { margin: 0; padding-left: 20px; }
+  .steps li { font-size: 14px; line-height: 1.6; color: var(--text); }
+  .ios {
+    display: none;
+    margin: 18px auto 0;
+    padding: 12px 16px;
+    background: #1d1a12;
+    border: 1px solid #3a3320;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #e8d9a8;
+    max-width: 360px;
+    line-height: 1.5;
+  }
+  .disclaimer {
+    margin: 28px auto 0;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+    max-width: 360px;
+  }
+  .legal {
+    margin: 12px auto 0;
+    font-size: 12px;
+  }
+  .legal a {
+    color: var(--muted);
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <main class="card">
+    <!-- App mark: violet→blue squircle holding a calendar card with one highlighted day. -->
+    <svg class="glyph" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#8B5CFF"/>
+          <stop offset="0.5" stop-color="#5A6BFF"/>
+          <stop offset="1" stop-color="#3D7BFF"/>
+        </linearGradient>
+        <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#8B5CFF"/>
+          <stop offset="1" stop-color="#3D7BFF"/>
+        </linearGradient>
+      </defs>
+      <rect x="0" y="0" width="100" height="100" rx="22.5" fill="url(#bg)"/>
+      <rect x="33.5" y="13" width="5" height="11.5" rx="2.5" fill="#fff"/>
+      <rect x="61.5" y="13" width="5" height="11.5" rx="2.5" fill="#fff"/>
+      <rect x="19" y="20.5" width="62" height="61" rx="8.5" fill="#fff"/>
+      <rect x="19" y="20.5" width="62" height="13.5" fill="url(#hd)"/>
+      <path d="M19 29 h62 v44.5 a8.5 8.5 0 0 1 -8.5 8.5 h-45 a8.5 8.5 0 0 1 -8.5 -8.5 Z" fill="#fff"/>
+      <g fill="#DFE0EA">
+        <rect x="24.8" y="40" width="10.5" height="9" rx="1.8"/>
+        <rect x="39.8" y="40" width="10.5" height="9" rx="1.8"/>
+        <rect x="54.8" y="40" width="10.5" height="9" rx="1.8"/>
+        <rect x="69.8" y="40" width="6.4" height="9" rx="1.8"/>
+        <rect x="24.8" y="52" width="10.5" height="9" rx="1.8"/>
+        <rect x="54.8" y="52" width="10.5" height="9" rx="1.8"/>
+        <rect x="69.8" y="52" width="6.4" height="9" rx="1.8"/>
+      </g>
+      <rect x="39.8" y="52" width="10.5" height="9" rx="1.8" fill="#5A6BFF"/>
+    </svg>
+
+    <h1>CONFERENCE<span class="dim">schedule</span></h1>
+    <p class="sub">Browse and plan your conference week. This build ships the SIGGRAPH&nbsp;2026 schedule.</p>
+
+    <a class="btn" id="download" href="https://github.com/wnschnapp/conference-schedule-releases/releases/latest/download/androidApp-release.apk">Download for Android</a>
+    <p class="hint" id="hint">Always installs the latest version.</p>
+
+    <div class="steps">
+      <h2>Installing</h2>
+      <ol>
+        <li>Tap <strong>Download for Android</strong> above.</li>
+        <li>Open the downloaded file.</li>
+        <li>If prompted, allow installs from your browser — this is normal for apps outside the Play Store and is only asked once.</li>
+      </ol>
+    </div>
+
+    <div class="ios" id="ios">
+      This app is Android-only, so it can't be installed on an iPhone or iPad. Open this page on an Android phone to download it.
+    </div>
+
+    <p class="disclaimer">Conference Schedule and its creator are not associated, affiliated, or licensed by ACM SIGGRAPH.</p>
+    <p class="legal"><a href="privacy.html">Privacy Policy</a></p>
+  </main>
+
+  <script>
+    (function () {
+      var ua = navigator.userAgent || "";
+      var isAndroid = /Android/i.test(ua);
+      var isApple = /iPhone|iPad|iPod|Macintosh/i.test(ua) && !isAndroid;
+      var apk = document.getElementById("download").href;
+
+      if (isApple) {
+        document.getElementById("ios").style.display = "block";
+      }
+      // On Android, kick the download off automatically; the button remains as a reliable fallback
+      // in case the browser blocks the programmatic navigation.
+      if (isAndroid) {
+        setTimeout(function () {
+          try { window.location.href = apk; } catch (e) {}
+        }, 700);
+        document.getElementById("hint").textContent = "Your download should start automatically. If it doesn't, tap the button above.";
+      }
+    })();
+  </script>
+</body>
+</html>
