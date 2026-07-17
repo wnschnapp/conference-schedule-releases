@@ -27,3 +27,13 @@ The actual app source lives in a separate, private repository. This repo only ev
 compiled release builds — no source code, no bundled conference data.
 
 Conference Schedule and its creator are not associated, affiliated, or licensed by ACM SIGGRAPH.
+
+## Conference data
+
+The app fetches its schedules from here rather than baking them in, so a new conference is a file
+upload rather than an app release.
+
+- [`conferences/catalog.json`](conferences/catalog.json) — the list the in-app picker shows
+- `conferences/<id>.json` — one conference's full schedule
+
+Format and how to produce one: see `docs/conference-format.md` in the app repo.
