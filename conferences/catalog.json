@@ -22,9 +22,9 @@
         "time_zone": "America/Los_Angeles",
         "organizer": "ACM SIGGRAPH",
         "tracks": [
-          { "name": "Rendering", "keywords": ["Rendering"] },
+          { "name": "Rendering", "keywords": ["Rendering"], "title_terms": ["shading", "shader"] },
           { "name": "AI", "keywords": ["Artificial Intelligence/Machine Learning", "Generative AI", "Physical AI"] },
-          { "name": "Tech Art", "title_terms": ["technical art", "tech art", "rigging", "shader", "material", "procedural", "look dev", "lookdev"] },
+          { "name": "Rigging/Tech Art", "title_terms": ["technical art", "tech art", "rigging", "shader", "material", "procedural", "look dev", "lookdev"] },
           { "name": "VFX", "keywords": ["Visual Effects"] },
           { "name": "Animation", "keywords": ["Animation"] },
           { "name": "Simulation & Dynamics", "keywords": ["Simulation", "Dynamics"] },
