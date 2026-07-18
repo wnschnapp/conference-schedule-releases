@@ -20,7 +20,18 @@
         ],
         "snippet_version": "1783439522",
         "time_zone": "America/Los_Angeles",
-        "organizer": "ACM SIGGRAPH"
+        "organizer": "ACM SIGGRAPH",
+        "tracks": [
+          { "name": "Rendering", "keywords": ["Rendering"] },
+          { "name": "AI", "keywords": ["Artificial Intelligence/Machine Learning", "Generative AI", "Physical AI"] },
+          { "name": "Tech Art", "title_terms": ["technical art", "tech art", "rigging", "shader", "material", "procedural", "look dev", "lookdev"] },
+          { "name": "VFX", "keywords": ["Visual Effects"] },
+          { "name": "Animation", "keywords": ["Animation"] },
+          { "name": "Simulation & Dynamics", "keywords": ["Simulation", "Dynamics"] },
+          { "name": "VR / AR / Spatial", "keywords": ["Virtual Reality", "Augmented Reality", "Spatial Computing"] },
+          { "name": "Games", "keywords": ["Games"] },
+          { "name": "Geometry & Modeling", "keywords": ["Geometry", "Modeling"] }
+        ]
       }
     }
   ]
