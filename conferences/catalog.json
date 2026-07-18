@@ -7,7 +7,21 @@
       "url": "siggraph-2026.json",
       "start_date": "2026-07-19",
       "end_date": "2026-07-23",
-      "location": "Los Angeles"
+      "location": "Los Angeles",
+      "source": {
+        "type": "linklings",
+        "base": "https://s2026.conference-schedule.org",
+        "days": [
+          "2026-07-19",
+          "2026-07-20",
+          "2026-07-21",
+          "2026-07-22",
+          "2026-07-23"
+        ],
+        "snippet_version": "1783439522",
+        "time_zone": "America/Los_Angeles",
+        "organizer": "ACM SIGGRAPH"
+      }
     }
   ]
 }
